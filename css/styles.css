@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #auth-container {
+    margin: 20px;
+  }
+  
+  input {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  button {
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,35 @@
+{
+    "rules": {
+      "service": "cloud.firestore",
+      "databases": {
+        "match": "/{database}/documents",
+        "rules": {
+          "users": {
+            "match": "{userId}"{
+              "allow": {
+                "read": "request.auth.uid == userId",
+                "write": "request.auth.uid == userId"
+              }
+            }
+          },
+          "teams": {
+            "match": "{teamId}"{
+              "allow": {
+                "read": "request.auth != null",
+                "write": "request.auth.uid == resource.data.leaderID"
+              }
+            }
+          },
+          "requests": {
+            "match": "{requestId}": {
+              "allow": {
+                "read": "request.auth.uid == resource.data.memberID || request.auth.uid == resource.data.teamLeaderID",
+                "write": "request.auth.uid == resource.data.memberID || request.auth.uid == resource.data.teamLeaderID"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

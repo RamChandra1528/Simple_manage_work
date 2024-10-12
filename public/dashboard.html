@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="/js/member.js" defer></script>
+</head>
+<body>
+  <h1>Welcome to Your Dashboard</h1>
+  
+  <!-- Member's Dashboard -->
+  <div id="member-dashboard" style="display: none;">
+    <h2>Available Teams</h2>
+    <div id="available-teams">
+      <!-- Available teams will be displayed here -->
+    </div>
+
+    <h2>Pending Requests</h2>
+    <div id="pending-requests">
+      <!-- Pending join requests will be displayed here -->
+    </div>
+  </div>
+
+  <button onclick="logoutUser()">Logout</button>
+</body>
+</html>

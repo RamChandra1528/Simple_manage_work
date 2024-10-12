@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+  }
+  
+  /* Hero Section Styles */
+  #hero-section {
+    /* background-image: url('/images/download.jpeg'); Set your background image path here */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Overlay for text visibility */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+    color: #fff; /* White text color for contrast */
+  }
+  
+  h1.display-4 {
+    font-size: 3rem; /* Large font size for the main heading */
+    font-weight: bold; /* Bold font weight for emphasis */
+  }
+  
+  p.lead {
+    font-size: 1.5rem; /* Slightly larger font size for the lead paragraph */
+  }
+  
+  /* Button Styles */
+  .btn {
+    border-radius: 20px; /* Rounded buttons */
+  }
+  
+  .btn-outline-light {
+    border-color: #ffffff; /* White border for buttons */
+    color: #ffffff; /* White text color */
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #ffffff; /* Light background on hover */
+    color: #000; /* Dark text on hover */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    margin-bottom: 0; /* No margin below the navbar */
+  }
+  
+  .navbar-brand {
+    display: flex; /* Align logo and text in a line */
+    align-items: center; /* Center logo and text vertically */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8); /* Light color for nav links */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  .navbar-toggler {
+    border: none; /* No border for the toggler */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; /* White color for the toggler icon */
+  }
+  /* Carousel Styles */
+.carousel-item {
+    height: 100vh; /* Full height */
+  }
+  
+  .carousel-item .d-flex {
+    height: 100%; /* Ensure full height */
+    position: relative;
+  }
+  
+  .carousel-item .text-center {
+    position: absolute; /* Center text */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering effect */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(1); /* Change the arrow color to white */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for arrows */
+    border-radius: 50%;
+  }
